@@ -101,7 +101,7 @@ font-family: "Poppins", sans-serif;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-image: url(./media/profile.JPG);
+  background-image: url(./media/profile.jpg);
   background-position: center;
   background-size: cover;
 }
