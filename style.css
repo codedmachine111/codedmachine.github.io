@@ -1,0 +1,707 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-image: url(./media/bgr.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+    height: 15vh;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul li{
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   list-style: none;
+}
+
+nav ul  li a{
+    display: block;
+    text-decoration: none;
+padding: 1rem;
+border-radius: 5px;
+color: #8c8c8c;
+font-size: 1rem;
+letter-spacing: 2px;
+font-weight: 400;
+font-family: "Poppins", sans-serif;
+opacity: 0.8;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #0f0f0f;
+    opacity: 1;
+    transition:  0.5s ease;
+}
+nav ul ul {
+    position: absolute;
+    z-index: 100;
+    padding: 0.5rem;
+    display: none;
+    width: 100%;
+    /* background-color: #080707; */
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul ul li{
+    width: 100%;
+}
+nav ul ul hr{
+    opacity: 0.2;
+}
+nav ul ul li a{
+    padding: 0.5rem;
+    width: 100%;
+    color: #fff;
+font-size: 0.9rem;
+}
+nav ul ul li a:hover{
+    color: #0f0f0f;
+    background-color: #fff;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+#homeli{
+    color: #9400FF;
+    background-color: rgba(0,0,0,0);
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+padding-left: 1rem;
+font-size: 1.3rem;
+text-transform: uppercase;
+color: #fff;
+font-weight: 500;
+letter-spacing: 5px;
+text-align: center;
+position: relative;
+padding-left: 62px;
+font-family: "Poppins", sans-serif;
+}
+.logo .img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-image: url(./media/profile.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.logo .txt{
+    display: flex;
+    color: #8c8c8c;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    border: solid #9400FF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.content{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  padding-bottom: 5rem;
+}
+.content h2{
+    color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 600;
+    font-size:8rem;
+}
+.content h2 span{
+    color: #9400FF;
+}
+.content p{
+    color: #FFFFFF;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    word-spacing: 2px;
+    font-weight: 300;
+
+}
+.hire-btn, .view-btn{
+    margin: 2rem 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border-color: rgb(199 200 205 / 37%);
+    outline: none;
+    font-weight: 300;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    padding: 0.7rem;
+    -moz-appearance: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #8c8c8c;
+}
+.view-btn{
+    font-size: 1rem;
+}
+.hire-btn:hover, .view-btn:hover{
+    color: #0f0f0f;
+    transition: 0.3s ease;
+    background-color: #fff;
+}
+.change{
+    height: 15vh;
+    background-color: #222222;
+}
+.change .mini{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.change .mini .txtholders{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change .mini .txtholders p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Urbanist", sans-serif;
+}
+
+
+.container2{
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    background-color: #0f0f0f;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutcontent{
+    padding: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutcontent .left, .aboutcontent .text{
+    width: 50%;
+    height: 100%;
+}
+
+.aboutcontent .text .title h2{
+    font-weight: 700;
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    font-family: "Poppins", sans-serif;
+}
+.aboutcontent .text .title hr{
+    border-color: rgba(255, 255, 255, 0.08);
+}
+/* .aboutcontent .text .title h2::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    border-bottom: 4px solid #9400FF;
+    opacity: 0.6;
+} */
+.aboutcontent .text{
+    position: relative;
+}
+.aboutcontent .text .abt p{
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    opacity: 0.6;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-family: "Urbanist", sans-serif;
+}
+.aboutcontent .left .image{
+    display: flex;
+    padding: 2rem;
+}
+.aboutcontent .left .image img{
+width: 80%;
+border-radius: 0.5rem;
+}
+.container3{
+    min-height: 100vh;
+    height: auto;
+}
+.content3{
+   min-height: 100vh;
+   background-color: #0f0f0f;
+
+
+}
+.content3 hr{
+    width: 50%;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+.content3 .row{
+display: flex;
+margin-top: 4rem;
+width: 100%;
+padding: 4rem;
+justify-content: space-around;
+}
+.content3  h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    font-family: "Poppins", sans-serif;
+}
+.content3 .row .card .icon{
+    color: #9400FF;
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    font-size:5rem;
+}
+.content3 .row .card{
+    width: 33.33%;
+    padding: 1rem;
+}
+.content3 .row .card .txt{
+    color: #fff;
+    text-align: center;
+    opacity: 0.7;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: "Urbanist", sans-serif;
+}
+.content3 .row{
+    height: 100%;
+    padding: 4rem;
+}
+
+.container4{
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container4 .row1{
+    display: flex;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+}
+.container4 h2{
+    font-weight: 700;
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    font-family: "Poppins", sans-serif;
+}
+.container4  hr{
+    width: 50%;
+    border-color:rgba(255, 255, 255, 0.08) ;
+}
+.container4 .row1 .abt{
+    width: 50%;
+    padding: 2rem;
+}
+.container4 .row1 .img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container4 .row1 .img img{
+    width: 70%;
+    height: 100%;
+}
+.container4 .row1 .abt .mini{
+    font-size: 1.5rem;
+text-transform: uppercase;
+letter-spacing: .1em;
+font-family: "Poppins", sans-serif;
+color: #8c8c8c;
+}
+.container4 .row1 .abt .title{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+.container4 .row1 .abt .proj{
+    font-size: 1.1rem;
+    letter-spacing:1px;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0;
+    color: #8c8c8c;
+}
+.container4 .row1 .abt .link{
+    font-size: 1rem;
+    letter-spacing:1px;
+  
+}
+.container4 .row1 .abt .link a{
+    text-decoration: none;
+    color: #9400FF;
+    font-family: "Urbanist", sans-serif;
+}
+.container5{
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    height: auto;
+}
+.container5 h2{
+    font-weight: 700;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    font-family: "Poppins", sans-serif;
+}
+.container5  hr{
+    width: 50%;
+    border-color:rgba(255, 255, 255, 0.08) ;
+}
+.container5 .socialrow{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.container5 .socialrow .box{
+width: 50%;
+display: flex;
+margin-top: 1rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container5 .socialrow .box .holder{
+    display: flex;
+    color: #fff;
+    gap: 5%;
+    width: 100%;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.container5 .socialrow .box .holder a{
+    border-radius: 50%;
+    text-decoration: none;
+    color: #9400FF;
+    
+}
+.container5 .socialrow .box .holder p{
+    text-align: right;
+    opacity: 0.8;
+}
+
+footer{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    word-spacing: 1px;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 1px;
+
+}
+footer p a{
+    text-decoration: none;
+    color: #9400FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #8c8c8c;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.fa-bars::before{
+    content: "\f0c9";
+}
+
+.come-in {
+    transform: translateY(200px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+  
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+/* upto 555px */
+
+@media all and (max-width: 1100px){
+
+
+    .checkbtn{
+        display: block;
+    
+    }
+    .checkbtn{
+        padding-right: 20px;
+    }
+    #homeli{
+        background-color: rgba(0,0,0,0);
+    }
+    #drop{
+        display: none;
+        opacity: 0;
+    }
+    ul{
+        margin-top: 20px;
+    position: absolute;
+    height: 85vh;
+    z-index: 120;
+    background: #1b1b1b;
+    top: 12%;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    }
+    .list{
+        display: block;  
+        width: 100%;     
+    }
+
+    .list li{
+        width: 100%;
+
+        height: 2rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .list li a:hover{
+        background-color: rgba(0,0,0,0);
+        transition: 0.2s ease;
+        color: #9400FF;
+    }
+    .list li a{
+        font-size: 1rem;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.5s ease-in;
+    
+    }
+    #check:checked ~ .checkbtn i::before{
+        content: "\f00d";
+    }
+    }
+
+    @media all and (max-width: 650px){
+.logo{
+    padding-left: 0.2rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.hire-btn{
+    font-size: 1.1rem;
+}
+.content h2{
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+}
+.change{
+    width: 100%;
+}
+.change .txtholders{
+    padding: 1rem;
+}
+.change .mini .txtholders p{
+    font-size: 1rem;
+}
+.aboutcontent{
+    display: block;
+}
+.aboutcontent .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.aboutcontent .left .image{
+    padding: 1rem;
+}
+.aboutcontent .left .image .img{
+text-align: center;
+}
+.aboutcontent .text{
+    width: 100%;
+}
+.aboutcontent .text .title h2{
+    font-size: 5rem;
+}
+.aboutcontent .text .abt p{
+    font-size: 1rem;
+}
+.container3{
+    background-color: #0f0f0f;
+    padding: 2rem;
+}
+.content3 h2{
+    font-size: 5rem;
+}
+.content3 .row .card .icon{
+    font-size: 2rem;
+}
+.content3 .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.content3 .row .card .txt{
+    font-size: 1rem;
+}
+.content3 .row .card{
+    width: 50%;
+}
+.container4{
+    padding: 2rem;
+}
+.container4 h2{
+    font-size: 4rem;
+}
+.container4 .row1{
+    display: flex;
+    margin: 0;
+    padding: 3rem 1rem 1rem 1rem;
+    flex-direction: column;
+}
+.container4 .row1 .img{
+    width: 100%;
+    justify-content: left;
+}
+.container4 .row1 .abt{
+    width: 100%;
+    padding: 1rem 0;
+}
+.container4 .row1 .abt .title{
+    font-size: 1.5rem;
+}
+.container4 .row1 .abt .mini{
+    font-size: 1rem;
+}
+.view-btn{
+    margin: 1.5rem 0;
+    letter-spacing: 0.1em;
+}
+.container5{
+    padding: 2rem;
+    min-height: auto;
+}
+.container5 h2{
+    font-size: 4rem;
+}
+.container5 .socialrow .box{
+    width: 100%;
+}
+.container5 .socialrow .box .holder{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
